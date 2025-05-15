@@ -14,6 +14,15 @@
 
 fn main() {
     // You can optionally experiment here.
+    calculate_price_of_apples(35);
+}
+
+fn calculate_price_of_apples(quantity: i32) -> i32 {
+    if quantity > 40{
+        quantity
+    } else {
+        quantity * 2
+    }
 }
 
 // Don't change the tests!
