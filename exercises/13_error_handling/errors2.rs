@@ -27,6 +27,13 @@ fn total_cost(item_quantity: &str) -> Result<i32, ParseIntError> {
         Err(e) => Err(e),
     }
 
+    // Alternatively, you could use the `?` operator to propagate the error:
+    // let qty = item_quantity.parse::<i32>()?;
+    // Ok((qty * cost_per_item) + processing_fee)
+    // This is shorter, but it may be less clear to someone who doesn't know
+    // about the `?` operator.
+    
+
 }
 
 fn main() {
